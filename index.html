@@ -1,0 +1,66 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+      <style>
+        .container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        .board {
+          margin: 0 auto;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .main-board {
+          width: 798px;
+        }
+        .cell {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid black;
+        }
+        .t-center {
+          text-align: center;
+        }
+  
+        .btn {
+          width: 10%;
+          margin-top: 20px;
+          padding: 5px;
+          background-color: #a7a7a7;
+          border: none;
+        }
+        
+        input:focus {
+          outline: none;
+        }
+        .highlight {
+          background-color: #72867d;
+        }
+      </style>
+      <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+      <div class="container">
+        <h1 class="t-center">Bingo Board</h1>
+        <div class="main-board m-auto board"></div>
+        <input
+          type="button"
+          id="randBtn"
+          class="btn"
+          value="Generate random number"
+        />
+      
+      
+        <h5 id="randNum"></h5>
+      </div>
+    </body>
+  </html>
+  
